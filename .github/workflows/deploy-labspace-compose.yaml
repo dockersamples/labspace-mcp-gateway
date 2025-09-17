@@ -27,6 +27,6 @@ jobs:
 
       - name: Publish Compose file
         run: |
-          docker compose -f oci://dockersamples/labspace -f .labspace/compose.override.yaml publish $DOCKERHUB_USERNAME/labspace-mcp-gateway --with-env -y
+          docker compose -f oci://dockersamples/labspace -f .labspace/compose.override.yaml publish dockersamples/labspace-mcp-gateway --with-env -y
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
