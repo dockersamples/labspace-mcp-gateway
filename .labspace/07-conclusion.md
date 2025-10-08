@@ -8,6 +8,7 @@ You’ve completed the **Docker MCP Gateway** lab!
 - Inject secrets for servers that require credentials.
 - Filter tools to save tokens and reduce confusion.
 - Connect the MCP Gateway to your application.
+- Configure the MCP Gateway to use a custom MCP server.
 
 ## Next Steps
 

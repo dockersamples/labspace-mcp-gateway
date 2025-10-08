@@ -16,7 +16,7 @@ With these tools, you could create agents that can perform online searches, do b
 
     ```yaml save-as=compose.yaml
     services:
-      gateway:
+      mcp-gateway:
         image: docker/mcp-gateway
         command:
           - --servers=duckduckgo

@@ -21,7 +21,7 @@ Fortunately, the MCP Gateway makes it easy to filter the tools it exposes.
 
     ```yaml
     services:
-      gateway:
+      mcp-gateway:
         command:
           ...
           - --tools=fetch_content,search,get_pull_request,get_pull_request_diff,get_pull_request_files,get_issue,get_issue_comments
@@ -50,3 +50,5 @@ Fortunately, the MCP Gateway makes it easy to filter the tools it exposes.
     - **owner:** `docker`
     - **pullNumber:** 99
     - **repo:** welcome-to-docker
+
+    If successful, you should a PR with a title of `Update Dockerfile`.

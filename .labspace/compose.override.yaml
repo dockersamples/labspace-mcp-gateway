@@ -4,6 +4,7 @@ services:
       HOST: 0.0.0.0
       DANGEROUSLY_OMIT_AUTH: "true"
       MCP_AUTO_OPEN_ENABLED: "false"
+      DOCKER_MCP_IN_CONTAINER: "1"
     ports: !override
       - 6274:6274
       - 6277:6277

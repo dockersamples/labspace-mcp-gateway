@@ -2,14 +2,13 @@
 
 Now that you've learned some of the basics of configuring MCP servers, you're ready to connect it to your application.
 
+## Code snippets
+
+By using environment variables, it allows your application to be easily reconfigured to point to a MCP server running at a different location.
+
 > [!NOTE]
 > The method to connect MCP servers will vary on the language and framework you're using. Therefore, be sure to check out the documentation for the framework you're using.
 
-
-
-## Using the MCP Gateway
-
-By using environment variables, it allows your application to be easily reconfigured to point to a MCP server running at a different location.
 
 ### LangChain
 

@@ -29,21 +29,21 @@ To provide this, you will use [Docker Compose secrets](https://docs.docker.com/c
         file: .env
     ```
 
-3. Update the `gateway` service in the `compose.yaml` to inject the secret:
+3. Update the `mcp-gateway` service in the `compose.yaml` to inject the secret:
 
     ```yaml
     services:
-      gateway:
+      mcp-gateway:
         ...
         secrets:
           - github-credential
     ```
 
-4. Update the `command` for the `gateway` service to tell the MCP Gateway where to find the secrets:
+4. Update the `command` for the `mcp-gateway` service to tell the MCP Gateway where to find the secrets:
 
     ```yaml
     services:
-      gateway:
+      mcp-gateway:
         ...
         command:
           - --servers=duckduckgo
@@ -64,7 +64,7 @@ To provide this, you will use [Docker Compose secrets](https://docs.docker.com/c
 
 With the MCP Gateway now running with the GitHub Official MCP server, you should be able to see a significant increase in the available tools.
 
-1. Open the MCP Inspector at http://localhost:6274.
+1. Open the MCP Inspector at :tabLink[http://localhost:6274]{href="http://localhost:6274" title="MCP Inspector"}.
 
 2. Since the MCP Gateway had to restart, click the **Connect** button to reconnect.
 
@@ -78,6 +78,6 @@ With the MCP Gateway now running with the GitHub Official MCP server, you should
 
 ## Next steps
 
-You now have two MCP servers configured, but almost 100 tools! Each tool consumes tokens and context when being sent to the LLM. This slows down every request, increases costs, and can even confuse many models.
+You now have two MCP servers configured, but over 100 tools! Each tool consumes tokens and context when being sent to the LLM. This slows down every request, increases costs, and can even confuse many models.
 
 In the next section, you'll learn how to filter the tools the MCP Gateway exposes.

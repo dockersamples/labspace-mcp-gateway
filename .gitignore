@@ -1,2 +1,5 @@
 /compose.yaml
 .env
+node_modules
+catalog.yaml
+compose.custom-mcp.yaml
