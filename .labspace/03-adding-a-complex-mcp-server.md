@@ -21,7 +21,7 @@ To provide this, you will use [Docker Compose secrets](https://docs.docker.com/c
 
     Replace `YOUR_TOKEN_HERE` with your Personal Access Token.
 
-2. Update your `compose.yaml` to define the secret:
+2. Update your `compose.yaml` to define the secret by placing this configuration at the bottom of the file:
 
     ```yaml
     secrets:

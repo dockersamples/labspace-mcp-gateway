@@ -58,7 +58,7 @@ The MCP Gateway uses a _catalog_ to list the available servers. The default cata
     >
     > The Compose file approach here simply makes it easier to do everything using a single file.
 
-2. Add the MCP Gateway service, injecting the catalog config into the container, and instructing the MCP Gateway which catalog to use:
+2. In the `compose.custom-mcp.yaml` file, add the MCP Gateway service. Configure it to inject the catalog config into the container and provide arguments to configure the MCP Gateway to use the custom catalog:
 
     ```yaml
     services:
@@ -79,8 +79,8 @@ The MCP Gateway uses a _catalog_ to list the available servers. The default cata
 
 3. Start the new stack:
 
-    ```bash terminal-id=custom-mcp
-    docker compose -f compose.custom-mcp.yaml up
+    ```bash terminal-id=compose2
+    docker compose -f compose.custom-mcp.yaml up -d
     ```
 
 4. Using the :tabLink[MCP Inspector]{href="http://localhost:6274" title="MCP Inspector"}, connect to the gateway (streaming at http://localhost:8811) and validate you see the tool provided by the custom MCP server.
