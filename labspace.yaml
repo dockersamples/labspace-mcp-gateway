@@ -1,3 +1,8 @@
+metadata:
+  id: dockersamples/labspace-mcp-gateway
+  sourceRepo: github.com/dockersamples/labspace-mcp-gateway
+  contentVersion: temp-version # This will be replaced during deployment
+
 title: Docker MCP Gateway
 description: |
   Learn how to use the Docker MCP Gateway to provide your agentic applications with the tools they need to perform complex tasks.

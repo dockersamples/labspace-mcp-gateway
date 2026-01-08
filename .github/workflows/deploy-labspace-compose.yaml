@@ -1,4 +1,7 @@
-name: Build and Push Docker Image
+name: Package and deploy Labspace
+
+env:
+  DOCKERHUB_REPO: dockersamples/labspace-mcp-gateway
 
 on:
   push:
@@ -26,8 +29,11 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Update Labspace content version
+        run: |
+          CONTENT_VERSION=$(git rev-parse --short HEAD)
+          sed -i "s/contentVersion:.*$/contentVersion: $CONTENT_VERSION/" labspace.yaml
+
       - name: Publish Compose file
         run: |
           docker compose -f oci://dockersamples/labspace -f .labspace/compose.override.yaml publish dockersamples/labspace-mcp-gateway --with-env -y
-        env:
-          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
