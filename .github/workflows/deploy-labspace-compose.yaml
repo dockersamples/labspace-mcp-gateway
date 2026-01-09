@@ -26,5 +26,4 @@ jobs:
         uses: dockersamples/publish-labspace-action@v1
         with:
           target_repo: dockersamples/labspace-mcp-gateway
-          target_tag: dev
-          labspace_base_version: dev
+
