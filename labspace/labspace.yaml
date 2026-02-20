@@ -22,3 +22,9 @@ sections:
     contentPath: 06-using-a-custom-mcp-server.md
   - title: Conclusion
     contentPath: 07-conclusion.md
+
+services:
+  - id: inspector
+    title: MCP Inspector
+    url: http://localhost:6274
+    icon: find_in_page

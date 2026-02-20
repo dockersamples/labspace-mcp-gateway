@@ -38,7 +38,7 @@ Fortunately, the MCP Gateway makes it easy to filter the tools it exposes.
 
 ## Validating the tool filtering
 
-1. Open the MCP Inspector at :tabLink[http://localhost:6274]{href="http://localhost:6274" title="MCP Inspector"}
+1. Open the MCP Inspector at :tabLink[http://localhost:6274]{href="http://localhost:6274" id="inspector"}
 
 2. Reconnect to the server and list the tools
 

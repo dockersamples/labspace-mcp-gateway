@@ -73,7 +73,7 @@ The [MCP Inspector](https://github.com/modelcontextprotocol/inspector) is a grea
     npx --yes @modelcontextprotocol/inspector
     ```
 
-2. Once it finishes, open the MCP Inspector running at :tabLink[http://localhost:6274]{href="http://localhost:6274" title="MCP Inspector"}.
+2. Once it finishes, open the MCP Inspector running at :tabLink[http://localhost:6274]{href="http://localhost:6274" id="inspector"}.
 
 3. Configure the MCP Inspector to connect to a MCP server with the following configuration:
 

@@ -64,7 +64,7 @@ To provide this, you will use [Docker Compose secrets](https://docs.docker.com/c
 
 With the MCP Gateway now running with the GitHub Official MCP server, you should be able to see a significant increase in the available tools.
 
-1. Open the MCP Inspector at :tabLink[http://localhost:6274]{href="http://localhost:6274" title="MCP Inspector"}.
+1. Open the MCP Inspector at :tabLink[http://localhost:6274]{href="http://localhost:6274" id="inspector"}.
 
 2. Since the MCP Gateway had to restart, click the **Connect** button to reconnect.
 

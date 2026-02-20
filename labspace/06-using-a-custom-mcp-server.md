@@ -24,7 +24,7 @@ This Labspace already contains the code for a MCP server for you to use, which p
     docker build -t time-mcp-server .
     ```
 
-2. Validate the server by opening the :tabLink[MCP Inspector]{href="http://localhost:6274" title="MCP Inspector"} and connect with the following config:
+2. Validate the server by opening the :tabLink[MCP Inspector]{href="http://localhost:6274" id="inspector"} and connect with the following config:
 
     - **Transport Type:** STDIO
     - **Command:** `docker`
@@ -83,7 +83,7 @@ The MCP Gateway uses a _catalog_ to list the available servers. The default cata
     docker compose -f compose.custom-mcp.yaml up -d
     ```
 
-4. Using the :tabLink[MCP Inspector]{href="http://localhost:6274" title="MCP Inspector"}, connect to the gateway (streaming at http://localhost:8811) and validate you see the tool provided by the custom MCP server.
+4. Using the :tabLink[MCP Inspector]{href="http://localhost:6274" id="inspector"}, connect to the gateway (streaming at http://localhost:8811) and validate you see the tool provided by the custom MCP server.
 
 It works!
 
