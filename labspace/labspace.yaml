@@ -9,16 +9,16 @@ description: |
 
 sections:
   - title: Introduction
-    contentPath: .labspace/01-introduction.md
+    contentPath: 01-introduction.md
   - title: Adding a simple MCP server
-    contentPath: .labspace/02-adding-a-simple-mcp-server.md
+    contentPath: 02-adding-a-simple-mcp-server.md
   - title: Adding a MCP server that needs credentials
-    contentPath: .labspace/03-adding-a-complex-mcp-server.md
+    contentPath: 03-adding-a-complex-mcp-server.md
   - title: Filtering available tools
-    contentPath: .labspace/04-filtering-available-tools.md
+    contentPath: 04-filtering-available-tools.md
   - title: Connecting the MCP Gateway to your app
-    contentPath: .labspace/05-connecting-the-mcp-gateway-to-your-app.md
+    contentPath: 05-connecting-the-mcp-gateway-to-your-app.md
   - title: Using a custom MCP server
-    contentPath: .labspace/06-using-a-custom-mcp-server.md
+    contentPath: 06-using-a-custom-mcp-server.md
   - title: Conclusion
-    contentPath: .labspace/07-conclusion.md
+    contentPath: 07-conclusion.md
